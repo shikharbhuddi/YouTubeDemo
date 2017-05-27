@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.codebrat.youtubedemo.activity.MainActivity">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/add_comment"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/btn_add_comment_background"
+            android:id="@+id/add_comment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comments_head"
+                android:layout_gravity="left"
+                android:text="@string/comments"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clear_comments"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="@string/clear_comments"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/err_msg"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/no_comments"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@color/colorTextSecondary"/>
+
+        <ListView
+            android:id="@+id/modelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:listSelector="@android:color/transparent"
+            android:divider="@color/colorDivider"
+            android:dividerHeight="1sp" />
+
+    </LinearLayout>
+</LinearLayout>

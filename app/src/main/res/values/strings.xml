@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YoutubeDemo</string>
+    <string name="api_key">AIzaSyDMGP-4XmUXb0n6VvS7jOxO6v-Ihmxnkgg</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_text">YouTube Video Player and Audio Comments Recorder</string>
+    <!--End -->
+
+    <!-- MainActivity -->
+    <string name="search_text">Enter video URL</string>
+    <string name="search_btn">Search</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="comments"><b>Comments:</b></string>
+    <string name="speech_prompt">Speak your note!</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input.</string>
+    <string name="no_comments">No Comments available.</string>
+    <string name="clear_comments"><u>Clear All Comments</u></string>
+
+</resources>

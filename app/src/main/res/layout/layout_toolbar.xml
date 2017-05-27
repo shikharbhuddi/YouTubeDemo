@@ -1,0 +1,44 @@
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_logo"
+            android:scaleType="fitXY"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_text"
+            android:gravity="start"
+            android:hint="@string/search_text"
+            android:textColorHint="@color/colorText"
+            app:backgroundTint="@color/colorText"
+            android:maxLines="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_btn"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/search_btn"
+            android:background="@null"
+            android:src="@drawable/ic_search_white"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
